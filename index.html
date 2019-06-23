@@ -5,42 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <title>Gem Gamet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Gem Game</title>
 </head>
-<body>
-    <header>
-        <h1 id="title">Gem Collector</h1>
-    </header>
+<body> 
+    <div class="container">
+        <div class="row">
+        <header class=" col-xs-12 jumbotron">
+            <h1 class="card-title">Gem Collector</h1>
+        </header>
+        </div>
 
-    <section id="manual">
-        <h2 id="manual-title">How to play</h2>
-        <p class="instructions">You will be given a random number at the start of the game.</p>
-        <p class="instructions">There are four gems below. By clicking a gem, you will add a specific amountof points to your total score.</p>
-        <p class="instructions">You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
-        <p class="instructions">The value of each gem is hidden from you until you click on it.</p>
-        <p class="instructions">Each time the game starts the values of the gems will change.</p>
-    </section>
+   
+        <div class="row"> 
+            <div class="col-xs-6">
+                <section class="card">
+                    <div class="card-body">         
+                        <p class="card-text instructions">1. You will be given a random number at the start of the game.</p>
+                        <p class="card-text instructions">2. There are four gems below. By clicking a gem, you will add a specific amount of points to your total score.</p>
+                        <p class="card-text instructions">3. You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+                        <p class="card-text instructions">4. The value of each gem is hidden from you until you click on it.</p>
+                        <p class="card-text instructions">5. Each time the game starts the values of the gems will change.</p>    
+                    </div>
+                </section>
+            </div>
+        </div>
+    
+        <div class="row row-3">   
+            <div class="goal col-xs-1"><span id="computer-score">0</span></div>
+                <div class="">
+                    <div class="wins-losses col-xs-1 ">
+                        <section class="wins-losses">
+                            <div class="statement"></div>
+                            <div class="wins">Wins: </div>
+                            <div class="losses">Losses: </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <section id="computer">
-        <div id="random-number"></div>
-    </section>
+        <section id="options" class="row">
+            <img src="assets/images/blue_gem.png"   class="img-fluid" alt="Responsive image">
+            <img src="assets/images/green_gem.png"  class="img-fluid" alt="green gem">
+            <img src="assets/images/red_gem.png"    class="img-fluid" alt="red gem">
+            <img src="assets/images/yellow_gem.png" class="img-fluid" alt="yellow gem">
+        </section>
 
-    <section id="win-lose">
-        <div id="statement"></div>
-        <div id="wins">Wins: </div>
-        <div id="losses">Losses: </div>
-    </section>
-
-    <section id="options">
-        <img src="assets/images/blue_gem.png" alt="blue gem" width="100">
-        <img src="assets/images/green_gem.png" alt="green gem" width="100">
-        <img src="assets/images/red_gem.png" alt="red gem" width="100">
-        <img src="assets/images/yellow_gem.png" alt="yellow gem" width="100">
-    </section>
-
-    <section id="player-score">
-        <div id="score-title">Your total score is:</div>
-        <div id="score">0</div>
-    </section>
+        
+            <div id="total-score" class=" row">
+                <div id="score-title ">Your total score is:</div>  
+            </div>
+            <div class="row row-6">
+                <div id="score">0</div>
+            </div>
+       
+    </div>
 </body>
 </html>
