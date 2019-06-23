@@ -1,0 +1,106 @@
+body{
+    background: url(../images/background.jpg);
+}
+div.container{
+    margin-top: 10px;
+    margin-left: 25px;
+    padding: 0px;
+}
+
+/*--- header ---*/
+header.jumbotron{
+    padding: 2%;
+    background: #c97126;
+    margin-bottom: 10px;
+    
+} 
+
+h1.card-title{
+    font-size: 2em;
+    color: #fef7f7;
+} 
+
+/*--- manual/instructions section ---*/
+
+
+.instructions{
+    margin-left: 1%;
+    color: #639349;
+    font-size: 1.2em; 
+}
+
+
+section.card{
+    width: 60%;
+    border: none;
+    background: #fce6d0;
+}
+
+div.card-body{
+    padding: 40px 20px 100px 20px;
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+/*--- computer number section ---*/
+div.row-3{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    height: 120px;
+}
+.goal{
+    background: #5cc881;
+    color: #642e62;
+    font-size: 2em;
+    padding: 10px;
+    width: 28%;
+    height: 120px; 
+}
+
+
+/*--- wins and losses ---*/
+.statement{
+    height: 30px;
+}
+
+div.wins-losses{
+    background: #4dfdff;
+    margin-left: 10px;
+    padding: 10px 5px 0 5px;
+    font-size: 16px;
+    border: none;
+    height: 120px;
+    width: 85px;
+}
+
+.wins{
+    margin-bottom: 20px;
+}
+
+/*--- options/gems ---*/
+
+#total-score{
+    background: #27958c;
+    color: white;
+    margin:0 0 10px 10px;
+    padding-left: 5px;
+    width: 26.7%;
+    height: 30px;
+    font-size: 1.2em;
+    
+}
+
+#score{
+    background: #27958c;
+    color: white;
+    font-size: 2em;
+    margin-left: 25px;
+    padding: 0 0 0 15px;
+    width: 26%;
+    height: 120px; 
+}
+
+img:hover{
+    cursor: pointer;
+}
