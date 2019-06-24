@@ -60,8 +60,9 @@ div.row-3{
 
 
 /*--- wins and losses ---*/
-.statement{
+#statement{
     height: 30px;
+    margin-bottom: 10px;
 }
 
 div.wins-losses{
@@ -71,7 +72,7 @@ div.wins-losses{
     font-size: 16px;
     border: none;
     height: 120px;
-    width: 85px;
+    width: 100px;
 }
 
 .wins{

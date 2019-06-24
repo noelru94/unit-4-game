@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Gem Game</title>
 </head>
 <body> 
     <div class="container">
         <div class="row">
-        <header class=" col-xs-12 jumbotron">
-            <h1 class="card-title">Gem Collector</h1>
-        </header>
+            <header class=" col-xs-12 jumbotron">
+                <h1 class="card-title">Gem Collector</h1>
+            </header>
         </div>
 
    
@@ -34,23 +35,21 @@
     
         <div class="row row-3">   
             <div class="goal col-xs-1"><span id="computer-score">0</span></div>
-                <div class="">
                     <div class="wins-losses col-xs-1 ">
                         <section class="wins-losses">
-                            <div class="statement"></div>
-                            <div class="wins">Wins: </div>
-                            <div class="losses">Losses: </div>
+                            <div id="statement"></div>
+                            <div class="wins">Wins: <span id="wins"></span> </div>
+                            <div class="losses">Losses: <span id="losses"></span> </div>
                         </section>
                     </div>
-                </div>
             </div>
         </div>
 
         <section id="options" class="row">
-            <img src="assets/images/blue_gem.png"   class="img-fluid" alt="Responsive image">
-            <img src="assets/images/green_gem.png"  class="img-fluid" alt="green gem">
-            <img src="assets/images/red_gem.png"    class="img-fluid" alt="red gem">
-            <img src="assets/images/yellow_gem.png" class="img-fluid" alt="yellow gem">
+            <img src="assets/images/blue_gem.png"   id="blue-gem"   class="img-fluid gem" alt="Responsive image">
+            <img src="assets/images/green_gem.png"  id="green-gem"  class="img-fluid gem" alt="green gem">
+            <img src="assets/images/red_gem.png"    id="red-gem"    class="img-fluid gem" alt="red gem">
+            <img src="assets/images/yellow_gem.png" id="yellow-gem" class="img-fluid gem" alt="yellow gem">
         </section>
 
         
@@ -60,7 +59,8 @@
             <div class="row row-6">
                 <div id="score">0</div>
             </div>
-       
     </div>
+
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
